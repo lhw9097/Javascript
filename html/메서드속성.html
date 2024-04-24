@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://google.co.kr">구글</a>
+    <script> // 구글 글자 누르면 카카오 사이트로 가게 됨
+        const aEl = document.querySelector("a");
+        const href = aEl.getAttribute("href");
+        console.log(href);
+        aEl.setAttribute("href", "https://kakao.com")
+    </script>
+</body>
+</html>
