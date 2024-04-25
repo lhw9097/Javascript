@@ -1,0 +1,78 @@
+/* 4월 25일 목 */
+/* 방식 1 */
+#conrainer {
+    display: flex;
+    justify-content: center;
+	}
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    width: 140px;
+    height: 40px;
+    flex-wrap: wrap;
+    margin: 4px;
+    color : white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+.purple {
+    background-color: purple;
+}
+
+#result {
+    width: 500px;
+    height: 300px;
+    margin: 30px auto;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+/* 방식 2 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: flex;
+    width: 500px;
+    margin: 10px auto;
+}
+.btn {
+    margin: 2px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 2px;
+}
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+.purple {
+    background-color: purple;
+}
+#color-box {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    width: 500px;
+    margin: 10px auto;
+}

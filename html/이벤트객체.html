@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" />
+    </form>
+    <br>
+    <button>클릭</button>
+    <script>
+        const inputEl = document.querySelector("input");
+        inputEl.addEventListener("keydown", function (e) {
+            console.log(`keyCode:${event.keyCode}`);
+			console.log(`ctrlKey:${event.ctrlKey}`);
+			console.log(`altKey:${event.altKey}`);
+			console.log(`shiftKey:${event.shiftKey}`);
+        });
+        const btnEl = document.querySelector("button");
+        btnEl.addEventListener("click", function(event){
+            console.log(`clientX:${event.clientX}`);
+            console.log(`clientY :${event.clientY }`);
+            console.log(`pageX:${event.pageX}`);
+            console.log(`pageY:${event.pageY}`);
+            console.log(`screenX:${event.screenX}`);
+            console.log(`screenY :${event.screenY }`);
+        })
+    </script>
+</body>
+</html>

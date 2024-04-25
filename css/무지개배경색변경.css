@@ -1,0 +1,20 @@
+/* 4월 25일 목 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+  
+body {
+  background-color: #eee;
+}

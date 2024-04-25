@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/버튼클릭시배경색변경.css">
+</head>
+<body>
+<!-- 방식 1 -->
+    <div id="conrainer">
+        <p class="box green" onclick="changeBg('green')">Green</p>
+        <p class="box orange" onclick="changeBg('orange')">Orange</p>
+        <p class="box purple" onclick="changeBg('purple')">Purple</p>
+    </div>
+    <div id="result"></div>
+<!-- 방식 2 -->
+    <div id="container">
+        <div class="btn green" onclick="changeBG('green')">Green</div>
+        <div class="btn orange" onclick="changeBG('orange')">Orange</div>
+        <div class="btn purple" onclick="changeBG('purple')">Purple</div>
+    </div>
+    <div id="color-box"></div>
+    <script src="../js/버튼클릭시배경색변경.js"></script>
+</body>
+</html>
