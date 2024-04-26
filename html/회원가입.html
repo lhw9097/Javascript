@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">   
+    <link rel="stylesheet" href="../css/회원가입.css">
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <div id="container">
+        <form>
+            <div class="id_input_box">
+                <input type="text" id="id_txt" placeholder="아이디 입력">
+                <p class="id_input_check"></p>
+                <button class="input_confirm_btn" id="id_confirm">확인</button>
+            </div>
+
+            <div class="pw_input_box">
+                <input type="password" id="pw_txt" placeholder="패스워드 입력">
+                <p class="pw_input_check"></p>
+                <button class="input_confirm_btn" id="pw_confirm">확인</button>
+            </div>
+
+            <div class="email_input_box">
+                <input type="email" id="email_txt" placeholder="이메일 입력">
+                <p class="email_input_check"></p>
+                <button class="input_confirm_btn" id="email_confirm">확인</button>
+            </div>
+
+            <div class="phone_input_box">
+                <input type="tel" id="phone_txt" placeholder="전화번호 입력">
+                <p class="phone_input_check"></p>
+                <button class="input_confirm_btn" id="phone_confirm">확인</button>
+            </div>
+
+            <button class="reg_req_btn">가입 요청</button>
+        </form>
+    </div>
+    <script src="../js/회원가입.js"></script>
+</body>
+</html>

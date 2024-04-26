@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { /* 브라우저에 스크롤 생기게 하기 위해 추가 */
+            width: 5000px;
+            height: 5000px;
+        }
+        button { /*  좌표 고정. 스크롤 옮겨도 버튼이 따라다니게 됨 */
+            position: fixed;
+            /* left: 10px;
+            top: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="popup()">팝업</button><br>
+    <button onclick="window.close()">팝업 닫기</button><br>
+    <div>
+        <button class="btn1" onclick="sTo()">scrollTo(100, 200)</button><br>
+        <button class="btn2" onclick="sBy()">scrollBy(100, 200)</button>
+    </div><br>
+    <button onclick="printInfo()">window 객체 속성</button><br>
+    <script>
+        function popup() {
+            window.open("popup.html", "팝업", "width=200, height=200")
+        }
+        function sTo() {
+			window.scrollTo(100, 200);
+// window.scrollTo({left:100, top:200});
+        }
+          function sBy() {
+			window.scrollBy(100, 200);
+// window.scrollBy({left:100, top:200});
+        }
+        function printInfo() { <!-- 도구 더보기 - 개발자 도구 - Console -->
+            console.log(`웹 브라우저의 너비(innerWidth) : ${window.innerWidth}`);
+            console.log(`웹 브라우저의 높이(innerHeight) : ${window.innerHeight}`);
+            console.log(`웹 브라우저 창의 너비(outerWidth) : ${window.outerWidth}`);
+            console.log(`웹 브라우저 창의 높이(outerHeight) : ${window.outerHeight}`);
+            console.log(`웹 브라우저 창 위쪽 면과 모니터 사이의 간격(screenTop,screenY) : ${window.screenTop}/${window.screenY}`);
+            console.log(`웹 브라우저 창 왼쪽 면과 모니터 사이의 간격(screenLeft,screenX) : ${window.screenLeft}/${window.screenX}`);
+            console.log(`웹 브라우저 창의 스크롤 가로 위치(scrollX) : ${window.scrollX}`);
+            console.log(`웹 브라우저 창의 스크롤 세로 위치(scrollY) : ${window.scrollY}`);
+        }
+    </script>
+</body>
+</html>
